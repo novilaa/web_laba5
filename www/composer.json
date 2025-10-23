@@ -1,12 +1,6 @@
 {
-    "name": "myproject/library-system",
+    "name": "myproject/library",
     "require": {
-        "guzzlehttp/guzzle": "^7.0"
-    },
-    "autoload": {
-        "files": [
-            "ApiClient.php",
-            "UserInfo.php"
-        ]
+        "guzzlehttp/guzzle": "^7.10"
     }
 }
