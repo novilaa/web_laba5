@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление подписки</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Форма подписки на журнал</h2>
+
+    <form id="subscriptionForm" action="process.php" method="POST">
+    <label>Имя:</label><br>
+    <input type="text" name="username" placeholder="Ваше имя" required><br><br>
+
+    <label>Срок подписки (в месяцах):</label><br>
+    <input type="number" name="period" min="1" max="24" required><br><br>
+
+    <label>Выберите журнал:</label><br>
+    <select name="journal">
+        <option value="science">Наука и жизнь</option>
+        <option value="tech">Техника — молодёжи</option>
+        <option value="world">Вокруг света</option>
+    </select><br><br>
+
+    <label>
+        <input type="checkbox" name="digital" value="yes">
+        Электронная версия
+    </label><br><br>
+
+    <p>Формат оплаты:</p>
+    <label><input type="radio" name="payment" value="card" required> Банковская карта</label><br>
+    <label><input type="radio" name="payment" value="cash" required> Наличными</label><br><br>
+
+    <button type="submit">Отправить</button>
+    </form>
+
+    <p><a href="index.php">На главную</a></p>
+</body>
+</html>
