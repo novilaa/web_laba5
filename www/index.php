@@ -18,11 +18,10 @@ require_once 'vendor/autoload.php';
     <h1>📚 Библиотечная система + API 🚀</h1>
     
     <div class="nav">
-        <a href="index.php">🏠 Главная</a>
-        <a href="form.php">📝 Форма заявки</a>
-        <a href="view.php">👁️ Просмотр заявок</a>
-        <a href="test.php">🧪 Тест системы</a>
-    </div>
+    <a href="index.php">🏠 Главная</a>
+    <a href="form.php">📝 Форма заявки</a>
+    <a href="view.php">👁️ Просмотр заявок</a>
+</div>
 
     <?php if(isset($_SESSION['form_data'])): ?>
     <div class="info">
